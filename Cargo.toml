@@ -1,0 +1,16 @@
+[package]
+name = "rust-crawler"
+version = "0.1.0"
+authors = ["baejungmo <bjm1234@gudoinvest.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.0", features = ["macros"] }
+reqwest = { version = "0.11.3", features = ["socks", "json", "blocking"] }
+serde_json = "1.0.53"
+select = "*"
+scraper = "*"
+prettytable-rs = "*"
+futures = "0.3.5"
